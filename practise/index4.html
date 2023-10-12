@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animations</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .secMain{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .container{
+            background-color: yellow;
+            height: 200px;
+            padding-top: 77px;
+            position: relative;
+            animation: myTwoKeyFrame 1s 0s infinite linear;
+        }
+        .box{
+            background-color: brown;
+            color: white;
+            width: 50%;
+            height: 100px;
+            padding-top: 20px;
+            position: relative;
+            animation: myOneKeyFrame 1s 0s infinite linear;
+        }
+        .secContainer{
+            background-color: orange;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .thirdContainer{
+            background-color: skyblue;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .fourContainer{
+            background-color: pink;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .fiveContainer{
+            background-color: grey;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 10px solid black;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            animation: circleAnimation 2.5s 0s infinite linear;
+        }
+        .sixContainer{
+            background-color: blueviolet;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 10px solid black;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            animation: circleAnimation 2.5s 0s infinite linear;
+        }
+        .sevenContainer{
+            background-color: seagreen;
+            height: 200px;
+            width: 200px;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 10px solid black;
+            border-top: 10px solid red;
+            border-bottom: 10px solid red;
+            animation: circleAnimation 2.5s 0s infinite linear;
+        }
+        @keyframes circleAnimation{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes myOneKeyFrame{
+            from{
+                width: 500px;
+            }
+            to{
+                width: 100px;
+            }
+        }
+        @keyframes myTwoKeyFrame{
+            from{
+                width: 700px;
+            }
+            to{
+                width: 300px;
+            }
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="box"></div>
+        </div>
+        <div class="secContainer"></div>
+        <div class="thirdContainer"></div>
+        <div class="fourContainer"></div>
+    </div>
+    <div class="secMain">
+        <div class="fiveContainer"></div>
+        <div class="sixContainer"></div>
+        <div class="sevenContainer"></div>
+    </div>
+</body>
+</html>
